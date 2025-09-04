@@ -1,12 +1,12 @@
 # Fake Login Page (Educational Use Only)
 
 > [!IMPORTANT]
-> <h4> This tool is a Proof of Concept and is for Educational Purposes Only. </h4> 
+> This tool is a Proof of Concept and is for Educational Purposes Only. </h4> 
 > Using this tool, you can find out what information a malicious website can gather about you and your devices and why you shouldn't click on random links or grant permissions like Location to them.
 
 > [!CAUTION] 
 > **Please use this responsibly and ethically.**
-> <h4> DISCLAIMER </h4> 
+> DISCLAIMER
 > It is possible to use R4ven for nefarious purposes. It merely illustrates what adept attackers are capable of. Defenders have a responsibility to consider such attacks and protect their users from them. Using R4ven should only be done with the written permission of the targeted parties for legitimate penetration testing assignments.
 
 ## Overview
