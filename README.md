@@ -1,4 +1,4 @@
-# Fake Login Page (Educational Use Only)
+# ShadowLogger
 
 > [!IMPORTANT]
 > This tool is a Proof of Concept and is for Educational Purposes Only. </h4> 
@@ -10,8 +10,12 @@
 > It is possible to use R4ven for nefarious purposes. It merely illustrates what adept attackers are capable of. Defenders have a responsibility to consider such attacks and protect their users from them. Using R4ven should only be done with the written permission of the targeted parties for legitimate penetration testing assignments.
 
 ## Overview
-
 Fake Login Page and IP Logger is an educational project that captures IP addresses and credentials and sends it to a webhook.
+
+## Key features
+- Collects IP address
+- Collects credentials
+- Reports information to a discord webhook
 
 ## Setup
 
