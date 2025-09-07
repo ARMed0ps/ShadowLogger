@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Define colors
-RED="\033[1;31m"
-DARKMAGENTA="\033[0;35m"
+RED="\033[1;38;5;124m"
 GRAY="\033[1;30m"
 CYAN="\033[0;36m"
 NC="\033[0m" # No Color
@@ -11,7 +10,7 @@ NC="\033[0m" # No Color
 PORT=53142
 
 # ASCII Art Logo
-echo -e "${DARKMAGENTA}"
+echo -e "${RED}"
 cat << "EOF"
  _____ _   _   ___ ______ _____  _    _ _     _____ _____ _____  ___________
 /  ___| | | | / _ \|  _  \  _  || |  | | |   |  _  |  __ \  __ \|  ___| ___ \
