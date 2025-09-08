@@ -16,6 +16,7 @@ Fake Login Page and IP Logger is an educational project that captures IP address
 - Collects IP address
 - Collects credentials
 - Collects GPS
+- Collects snapshots from camera
 - Reports information to a discord webhook
 
 ## Setup
