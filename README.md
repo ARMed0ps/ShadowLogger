@@ -10,14 +10,14 @@
 > It is possible to use ShadowLogger for nefarious purposes. It merely illustrates what adept attackers are capable of. Defenders have a responsibility to consider such attacks and protect their users from them. Using ShadowLogger should only be done with the written permission of the targeted parties for legitimate penetration testing assignments.
 
 ## Overview
-ShadowLogger is an educational project that has multiple phishing page templates to capture IP addresses, credentials, location and snapshot and sends it to a webhook.
+ShadowLogger is an educational project that has the capabiliy of adding multiple phishing pages but only host one at a time. It captures IP addresses, credentials, location and snapshot and sends it to a webhook.
 
 ## Key features
 - Collects IP address
 - Collects credentials
 - Collects GPS
 - Collects snapshots from camera
-- Has multiple phishing page templates
+- Has capability of adding phishing page templates
 - Reports information to a discord webhook
 
 ## Setup
