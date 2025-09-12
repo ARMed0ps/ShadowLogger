@@ -10,13 +10,14 @@
 > It is possible to use ShadowLogger for nefarious purposes. It merely illustrates what adept attackers are capable of. Defenders have a responsibility to consider such attacks and protect their users from them. Using ShadowLogger should only be done with the written permission of the targeted parties for legitimate penetration testing assignments.
 
 ## Overview
-Fake Login Page and IP Logger is an educational project that captures IP addresses and credentials and sends it to a webhook.
+ShadowLogger is an educational project that has multiple phishing page templates to capture IP addresses, credentials, location and snapshot and sends it to a webhook.
 
 ## Key features
 - Collects IP address
 - Collects credentials
 - Collects GPS
 - Collects snapshots from camera
+- Has multiple phishing page templates
 - Reports information to a discord webhook
 
 ## Setup
@@ -45,3 +46,12 @@ sudo dpkg -i cloudflared-linux-amd64.deb
 ```bash
 bash start.sh
 ```
+
+## Adding custom phishing page templates
+### 1. Upload folder of login page to the templates folder
+### 2. Edit templates.conf
+```
+append the following line to the file:
+<Name>|<path>|<description>
+```
+
