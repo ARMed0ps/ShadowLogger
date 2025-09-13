@@ -24,8 +24,8 @@ ShadowLogger is an educational project that has the capabiliy of adding multiple
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/ARMed0ps/fake-login-page-and-IP-logger
-cd fake-login-page-and-IP-logger
+git clone https://github.com/ARMed0ps/ShadowLogger.git
+cd ShadowLogger
 ```
 ### 2. Edit files
 ```bash
@@ -49,6 +49,7 @@ bash start.sh
 
 ## Adding custom phishing page templates
 ### 1. Upload folder of login page to the templates folder
+I have more templates at https://github.com/ARMed0ps/ShadowLogger-templates
 ### 2. Edit templates.conf
 ```
 append the following line to the file:
