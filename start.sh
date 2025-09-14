@@ -9,6 +9,13 @@ NC="\033[0m"
 PORT=53142
 CONFIG_FILE="templates.conf"
 
+if [ -f ./utils.js ]; then
+    for dir in Templates/*; do
+        mkdir -p "$dir/js"
+        ln -sf ../../../utils.js "$dir/js/utils.js"
+    done
+fi
+
 # ASCII Art Logo
 echo -e "${RED}"
 cat << "EOF"
